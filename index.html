@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新システム設計</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>新システム設計</h1>
+    </header>   
+    <!-- タブナビゲーション -->
+   <div class="tab-container">
+    <ul class="tabs">
+        <li class="tab-link" data-tab="tab-1">画面</li>
+        <li class="tab-link current" data-tab="tab-2">流れ</li>
+        <li class="tab-link" data-tab="tab-3">集計</li>
+        <li class="tab-link" data-tab="tab-4">全体Q&Aと今後の展望</li>
+        <li class="tab-link" data-tab="tab-5">システム会社向け</li>
+    </ul>
+        <!-- タブコンテンツ -->
+        <div id="tab-1" class="tab-content current">
+            <h2>画面</h2>
+            <!-- サブコンテンツのセクション -->
+            <section class="sub-content">
+                <h3>JustDB</h3>
+                <div class="slider" id="slider-justdb">
+                    <div class="slides">
+                        <img src="images//justdb/justdb1.png" alt="JustDBの写真1">
+                        <img src="images/justdb/justdb2.png" alt="JustDBの写真2">
+                        <img src="images/justdb/justdb3.png" alt="JustDBの写真3">
+                        <img src="images/justdb/justdb4.png" alt="JustDBの写真3">
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1, 0)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 0)">&#10095;</button>
+                </div>
+            </section>
+            <section class="sub-content">
+                <h3>荷出し表</h3>
+                <div class="slider" id="slider-nidashi">
+                    <div class="slides">
+                        <img src="images/nidashi/nidashi1.png" alt="荷出し表の写真1">
+                        <img src="images/nidashi/nidashi2.png" alt="荷出し表の写真2">
+                        <img src="images/nidashi/nidashi3.png" alt="荷出し表の写真3">
+                        <img src="images/nidashi/nidashi4.png" alt="荷出し表の写真4">
+                        <img src="images/nidashi/nidashi5.png" alt="荷出し表の写真5">
+                        <img src="images/nidashi/nidashi6.png" alt="荷出し表の写真6">
+                        <img src="images/nidashi/nidashi7.png" alt="荷出し表の写真7">
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1, 1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 1)">&#10095;</button>
+                </div>
+            </section>
+            <section class="sub-content">
+                <h3>案件スケジュール</h3>
+                <div class="slider" id="slider-schedule">
+                    <div class="slides">
+                        <img src="images/anken/anken1.png" alt="案件スケジュールの写真1">
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1, 2)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 2)">&#10095;</button>
+                </div>
+            </section>
+            <section class="sub-content">
+                <h3>Teams</h3>
+                <div class="slider" id="slider-teams">
+                    <div class="slides">
+                        <img src="images/teams/teams1.png" alt="Teamsの写真1">
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 3)">&#10095;</button>
+                </div>
+            </section>
+            <section class="sub-content">
+                <h3>車両スケジュール</h3>
+                <div class="slider" id="slider-syaryo">
+                    <div class="slides">
+                        <img src="images/syaryo/syaryo1.png" alt="車輌スケジュールの写真1">
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 3)">&#10095;</button>
+                </div>
+            </section>
+            <section class="sub-content">
+                <h3>倉庫作業スケジュール</h3>
+                <div class="slider" id="slider-souko">
+                    <div class="slides">
+                        <img src="images/souko/souko1.png" alt="倉庫作業スケジュールの写真1">
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 3)">&#10095;</button>
+                </div>
+            </section>
+        </div>
+        <!-- "流れ"タブのコンテンツ -->
+<div id="tab-2" class="tab-content">
+    <h2>流れ</h2>
+    <!-- フローチャートの表示 -->
+    <div class="flow-chart">
+        <ul class="flow-steps">
+            <li class="flow-step">① 案件受注</li>
+            <li class="flow-step">② 現場準備</li>
+            <li class="flow-step">③ 現場中</li>
+            <li class="flow-step">④ 現場後</li>
+            <li class="flow-step">⑤ 請求・入金</li>
+            <li class="flow-step">⑥ 請求・入金</li>
+        </ul>
+    </div>
+    <!-- フローの詳細コンテンツ -->
+    <div class="flow-details">
+        <!-- 案件受注 -->
+        <div class="flow-content">
+            <h3>⓪ 案件相談</h3>
+            <section class="sub-content">
+                <h4>詳細フロー（写真）</h4>
+                <p>案件受注に関する詳細な写真や説明をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>各部署の作業</h4>
+                <p>案件受注に関わる各部署の作業内容をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>Q&A</h4>
+                <p>案件受注に関するよくある質問をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>将来の展望</h4>
+                <p>案件受注における将来の展望について説明します。</p>
+            </section>
+        </div>
+        <div class="flow-content">
+            <h3>① 案件受注</h3>
+            <section class="sub-content">
+                <h4>詳細フロー（写真）</h4>
+                <p>案件受注に関する詳細な写真や説明をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>各部署の作業</h4>
+                <p>案件受注に関わる各部署の作業内容をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>Q&A</h4>
+                <p>案件受注に関するよくある質問をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>将来の展望</h4>
+                <p>案件受注における将来の展望について説明します。</p>
+            </section>
+        </div>
+        <!-- 現場準備 -->
+        <div class="flow-content">
+            <h3>② 現場準備</h3>
+            <section class="sub-content">
+                <h4>詳細フロー（写真）</h4>
+                <p>案件受注に関する詳細な写真や説明をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>各部署の作業</h4>
+                <p>案件受注に関わる各部署の作業内容をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>Q&A</h4>
+                <p>案件受注に関するよくある質問をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>将来の展望</h4>
+                <p>案件受注における将来の展望について説明します。</p>
+            </section>
+        </div>
+        <div class="flow-content">
+            <h3>③ 現場中</h3>
+            <section class="sub-content">
+                <h4>詳細フロー（写真）</h4>
+                <p>案件受注に関する詳細な写真や説明をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>各部署の作業</h4>
+                <p>案件受注に関わる各部署の作業内容をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>Q&A</h4>
+                <p>案件受注に関するよくある質問をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>将来の展望</h4>
+                <p>案件受注における将来の展望について説明します。</p>
+            </section>
+        </div>
+        <div class="flow-content">
+            <h3>④ 現場後</h3>
+            <section class="sub-content">
+                <h4>詳細フロー（写真）</h4>
+                <p>案件受注に関する詳細な写真や説明をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>各部署の作業</h4>
+                <p>案件受注に関わる各部署の作業内容をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>Q&A</h4>
+                <p>案件受注に関するよくある質問をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>将来の展望</h4>
+                <p>案件受注における将来の展望について説明します。</p>
+            </section>
+        </div>
+        <div class="flow-content">
+            <h3>⑤ 請求・入金</h3>
+            <section class="sub-content">
+                <h4>詳細フロー（写真）</h4>
+                <p>案件受注に関する詳細な写真や説明をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>各部署の作業</h4>
+                <p>案件受注に関わる各部署の作業内容をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>Q&A</h4>
+                <p>案件受注に関するよくある質問をここに追加します。</p>
+            </section>
+            <section class="sub-content">
+                <h4>将来の展望</h4>
+                <p>案件受注における将来の展望について説明します。</p>
+            </section>
+        </div>
+    </div>
+</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 新システム設計</p>
+    </footer>
+    <!-- JavaScriptファイルを読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
