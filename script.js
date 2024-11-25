@@ -86,4 +86,31 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         slides[slideIndices[index]-1].style.display = "block";
     }
+
+
+
+
+
+
+
+
+    //Q&Aセクション
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach(function(question) {
+        question.addEventListener('click', function() {
+            // 対応する回答を取得
+            const answer = question.nextElementSibling;
+            // 表示・非表示を切り替え
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    });
+
+
+
+
 });
