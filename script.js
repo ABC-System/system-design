@@ -87,13 +87,6 @@ document.addEventListener("DOMContentLoaded", function() {
         slides[slideIndices[index]-1].style.display = "block";
     }
 
-
-
-
-
-
-
-
     //Q&Aセクション
     const questions = document.querySelectorAll('.question');
 
